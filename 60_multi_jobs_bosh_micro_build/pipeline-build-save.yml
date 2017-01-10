@@ -18,14 +18,15 @@ jobs:
       inputs:
         - name: bosh-init
           path: gopath/src/github.com/cloudfoundry/bosh-init
+        - name: tutorial
       outputs:
         - name: built-executable
-          path: build
+          path: built-executable
       run:
         path: tutorial/60_multi_jobs_bosh_micro_build/task-bosh-init-cli-build.sh
   - put: s3-bosh-init
     params:
-      file: build/bosh-init
+      file: built-executable/bosh-init
 
 resources:
 - name: git-bosh-init

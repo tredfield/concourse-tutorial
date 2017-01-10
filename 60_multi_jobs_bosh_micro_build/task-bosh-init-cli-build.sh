@@ -3,4 +3,4 @@
 set -uex
 
 gopath/src/github.com/cloudfoundry/bosh-init/bin/build
-cp -r gopath/src/github.com/cloudfoundry/bosh-init/out build
+cp gopath/src/github.com/cloudfoundry/bosh-init/out/bosh-init built-executable
