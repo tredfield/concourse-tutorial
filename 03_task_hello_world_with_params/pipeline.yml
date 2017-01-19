@@ -11,7 +11,5 @@ jobs:
   plan:
   - get: resource-tutorial
   - task: hello-world
-    inputs:
-      - name: resource-tutorial
-        path: 03_task_hello_world_with_params
     file: resource-tutorial/03_task_hello_world_with_params/task_hello_world.yml
+    params: {HELLO_ENV: beer}

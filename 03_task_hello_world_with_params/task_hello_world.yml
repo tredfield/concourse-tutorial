@@ -13,4 +13,4 @@ run:
   args: [hello world]
 
 params:
-  HELLO_ENV: good bye
+  HELLO_ENV:

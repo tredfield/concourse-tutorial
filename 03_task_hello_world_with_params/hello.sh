@@ -1,4 +1,5 @@
 #!/bin/sh
 
 echo $1
-echo $HELLO_ENV
+value=${2:-$HELLO_ENV}
+echo $value
