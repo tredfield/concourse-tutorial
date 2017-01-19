@@ -6,10 +6,10 @@ image_resource:
   source: {repository: busybox}
 
 inputs:
-- name: 03_task_hello_world_with_params
+- name: resource-tutorial
 
 run:
-  path: ./03_task_hello_world_with_params/hello.sh
+  path: resource-tutorial/03_task_hello_world_with_params/hello.sh
   args: [hello world]
 
 params:
